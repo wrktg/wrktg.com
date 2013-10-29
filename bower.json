@@ -1,0 +1,16 @@
+{
+  "name": "WRKTG",
+  "version": "0.1.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "contents/assets/components",
+    "vendor"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1",
+    "bootstrap": "~3.0.0",
+    "flat-ui-pro": "git+https://bitbucket.org/wrktg/flat-ui-pro.git#master",
+    "font-awesome": "git+https://github.com/FortAwesome/Font-Awesome"
+  }
+}

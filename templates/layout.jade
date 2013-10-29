@@ -1,0 +1,19 @@
+!!! 5
+html(lang='en')
+  - var bodyclass = page.bodyclass || page.metadata.bodyclass;
+  - var template = page.metadata.template.replace( ".jade", "");
+  - var bodyclasses = [ bodyclass, template ]
+  - var itemtype = "WebPage"
+  block vars
+  head
+    include head
+    block styles
+  body(class=bodyclasses, itemscope, itemtype="http://schema.org/" + itemtype)
+    include header
+    block content
+    block scripts
+      script(src=locals.url+'/assets/components/jquery/jquery.js')
+      script(src=locals.url+'/assets/components/handlebars/handlebars.js')
+      script(src=locals.url+'/assets/components/ember/ember.js')
+      script(src=locals.url+'/assets/js/main.js')
+      script(src=locals.url+'/assets/components/bootstrap/js/collapse.js')

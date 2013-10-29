@@ -1,0 +1,31 @@
+mixin author(authorName)
+  - var author = contents.authors[authorName + '.json']
+  span.author
+    if author
+      a(href='mailto:'+author.metadata.email)= author.metadata.name
+    else
+      =authorName
+
+mixin header(article)
+  h2
+    a(href=article.url)= article.title
+
+mixin article(article)
+  - if (article.metadata.hasOwnProperty('icon')) { var icon = article.metadata.icon } else { var icon = "default" }
+  span(class="icon-"+icon)
+  article.article
+    header
+      h2
+        a(href=article.url)= article.title
+    section.content
+      !{ typogr(article.intro).typogrify() }
+      if article.hasMore
+      p.date
+        |Written on 
+        span= moment(article.date).format('MMMM DD, YYYY')
+        
+        hr
+
+mixin space
+  &#160;
+
