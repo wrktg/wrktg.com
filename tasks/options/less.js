@@ -1,7 +1,7 @@
 module.exports = {
   compile: {
     files: {
-      'tmp/public/assets/styles.css': 'app/styles/**/*.less'
+      'tmp/public/assets/main.css': 'styles/main.less'
     }
   }
 };

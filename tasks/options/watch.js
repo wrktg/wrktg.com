@@ -1,9 +1,10 @@
 var Helpers = require('../helpers');
 
-var scripts = '{scripts}/**/*.{js,coffee}',
-    styles = 'styles/**/*.{css,sass,scss,less,styl}',
-    contents = 'contents/*.{md,markdown}',
-    other = '{public}/**/*';
+var scripts   = 'scripts/**/*.{js,coffee}',
+    styles    = 'styles/**/*.{css,sass,scss,less,styl}',
+    contents  = 'contents/**/*.{md,markdown}',
+    templates = 'templates/**/*.{hbs,handlebars}',
+    other     = '{public}/**/*';
 
 module.exports = {
   scripts: {
@@ -14,12 +15,12 @@ module.exports = {
     files: [styles],
     tasks: ['lock', 'buildStyles', 'unlock']
   },
-  contents: {
-    files: [contents],
+  embersmith: {
+    files: [contents, templates],
     tasks: ['lock', 'embersmith:build', 'buildContents', 'unlock']
   },
   other: {
-    files: [other, '!'+scripts, '!'+styles, '!'+contents],
+    files: [other, '!'+scripts, '!'+styles, '!'+contents, '!'+templates],
     tasks: ['lock', 'build:debug', 'unlock']
   },
 
