@@ -1,0 +1,14 @@
+{
+  "locals": {
+    "url": "http://wrktg.com",
+    "dev": "http://localhost:8000",    
+    "name": "WRKTG",
+    "owner": "WRKTG Inc."
+  },
+  "port": 8000,
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "output": "./tmp/public"
+}

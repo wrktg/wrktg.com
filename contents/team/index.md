@@ -1,5 +1,5 @@
 ---
-title: Team | WRKTG Inc.
+title: Team
 description: Working together from idea to launch
-template: team.jade
+template: team.hbs
 ---

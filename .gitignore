@@ -1,4 +1,13 @@
-contents/assets/components
-node_modules
-.idea
-build
+# compiled output
+/dist
+/tmp
+
+# dependencies
+/node_modules
+/vendor/*
+
+# misc
+/.sass-cache
+/connect.lock
+/libpeerconnection.log
+.DS_Store
