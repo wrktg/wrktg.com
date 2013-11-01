@@ -3,7 +3,7 @@ var Helpers = require('../helpers');
 var scripts   = 'scripts/**/*.{js,coffee}',
     styles    = 'styles/**/*.{css,sass,scss,less,styl}',
     contents  = 'contents/**/*.{md,markdown}',
-    templates = 'templates/**/*.{hbs,handlebars}',
+    templates = 'templates/**/*.{hbs,handlebars,coffee,js}',
     other     = '{public}/**/*';
 
 module.exports = {

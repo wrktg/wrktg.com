@@ -28,7 +28,8 @@
     "grunt-contrib-less": "~0.8.1",
     "grunt-contrib-coffee": "~0.7.0",
     "embersmith": "~0.5.5",
-    "grunt-embersmith": "0.0.1"    
+    "grunt-embersmith": "0.0.1",
+    "treeify": "~1.0.1"
   },
   "repository": "none"
 }

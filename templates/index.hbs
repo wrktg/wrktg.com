@@ -1,3 +1,22 @@
 {{>head}}
-index template
+<div class="container posts">
+  <div class="row">
+    {{#each contents.blog._.directories}}
+      {{#with this.[index.md]}}
+        <span class="icon-{{icon}}"></span>
+        <article class="article">
+          <header>
+            <h2><a href="{{url}}">{{title}}</a></h2>
+          </header>
+          <section class="content">
+            <p class="date">Written on <span>{{moment date}}</span></p>
+            {{{intro}}}
+            <hr/>
+          </section>
+        </article>
+      {{/with}}
+    {{/each}}
+  </div>
+</div>
+
 {{>footer}}
