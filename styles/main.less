@@ -1,22 +1,33 @@
 @import "bootstrap";
 @import "flat-ui";
 @import "font-awesome";
+@import "../vendor/lesshat/lesshat";
 @import "mixins";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+
 article, section {
   max-width: @screen-lg;
   .container-fixed();
 }
-
 
 @import "global";
 
 @import "header";
 
 @import "frontpage";
+@import "pages";
 @import "highlight";
-@import "team";
 @import "articles";
 @import "article";
-@import "hire-us";
 @import "footer";
-@import "nav";
+
+// Plugins
+@import "content-menu";

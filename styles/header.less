@@ -25,9 +25,9 @@
 
     .nav{
 
-    	li{
-    		display: inline-block;
-    	}
+      li{
+        display: inline-block;
+      }
 
 	    li:before {
 			content: "•";
@@ -40,18 +40,21 @@
 		}
 	}
 
-    .navbar-toggle{
-    	border: 0;
+  .navbar-toggle{
+    border: 0;
+  }
 
-    }
+  .navbar-toggle:hover, .navbar-toggle:focus{
+    background-color: #005380;
+  }
 
-    .navbar-toggle:hover, .navbar-toggle:focus{
-    	background-color: #005380;
-    }
+  i{
+    font-size: 20px;
+    color: @pomegranate;
+  }
 
-    i{
-    	font-size: 20px;
-    	color: @pomegranate;
-    }
+}
 
+.scrollbar {
+  background-color: #C0C0C0;
 }
