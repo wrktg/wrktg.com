@@ -1,49 +1,52 @@
-@grid-float-breakpoint:     10000px;
+  @grid-float-breakpoint:     10000px;
 
-.navbar{
-	
-	border-radius: 0px;
-	background: #005380;
-	border: 0;
-	margin: 0;
-	padding: 5px 0;
+body > header.navbar{
 
-	.navbar-brand{
-		border: 0;
-		font-size: 30px;
-		color: #fff;
-	}
+  border-radius: 0px;
+  background: #005380;
+  border: 0;
+  margin: 0;
+  padding: 5px 0;
 
-	.icon-bar{
+  .navbar-brand{
+    border: 0;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .icon-bar{
       height: 3px;
       width: 24px;
     }
 
     .nav{
 
-    	li{
-    		display: inline-block;
-    	}
+      li{
+        display: inline-block;
+      }
 
-	    li:before {
-			content: "•";
-			font-size: 20px;
-			color: #299BC9;
-		}
-	}
+      li:before {
+        content: "•";
+        font-size: 20px;
+        color: #299BC9;
+      }
+  }
 
-    .navbar-toggle{
-    	border: 0;
+  .navbar-toggle{
+    border: 0;
+  }
 
-    }
+  .navbar-toggle:hover, .navbar-toggle:focus{
+    background-color: #005380;
+  }
 
-    .navbar-toggle:hover, .navbar-toggle:focus{
-    	background-color: #005380;
-    }
+  i{
+    font-size: 20px;
+    color: @pomegranate;
+  }
 
-    i{
-    	font-size: 20px;
-    	color: @pomegranate;
-    }
+}
 
+.scrollbar {
+  background-color: #C0C0C0;
 }

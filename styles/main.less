@@ -1,24 +1,23 @@
 @import "bootstrap";
 @import "flat-ui";
 @import "font-awesome";
+@import "../vendor/lesshat/lesshat";
 @import "mixins";
 article, section {
   max-width: @screen-lg;
   .container-fixed();
 }
 
-
 @import "global";
 
 @import "header";
 
 @import "frontpage";
+@import "pages";
 @import "highlight";
-@import "team";
-@import "method";
-@import "values";
 @import "articles";
 @import "article";
-@import "hire-us";
 @import "footer";
-@import "nav";
+
+// Plugins
+@import "content-menu";

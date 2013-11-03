@@ -1,7 +1,7 @@
 module.exports = {
   "scripts": {
     options: {
-      bare: false
+      bare: true
     },
     files: [{
       expand: true,

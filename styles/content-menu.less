@@ -1,0 +1,20 @@
+@import (css) "../vendor/perfect-scrollbar/src/perfect-scrollbar.css";
+
+.content-menu {
+  position: relative;
+  overflow: visible;
+  .scrollbar {
+    position: fixed;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 10;
+    width: 100%;    
+    .menu-content {
+      position: relative;
+    }
+  }
+}
+
+body.content-menu-open {
+  overflow-y: hidden;  
+}
