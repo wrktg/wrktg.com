@@ -1,20 +1,23 @@
 {{>head}}
 <div class="container profiles">
   <div class="row">
+    <h2>Our Team</h2>
+  </div>
+  <div class="row">
     {{#each contents.team._.pages}}
       <div class="col-md-6">
         <div class="well">
           <div class="row profile">
             <img src="{{resolve-url url metadata.image}}" alt="{{metadata.name}}"/>
-            <h2>{{metadata.name}}</h2>
+            <h3>{{metadata.name}}</h3>
             {{#if metadata.twitter}}
-              <i class="fa fa-twitter-square">{{metadata.twitter}}</i>
+              <a class="fa fa-twitter-square" href="https://twitter.com/{{metadata.twitter}}"></a>
             {{/if}}
             {{#if metadata.github}}
-              <i class="fa fa-github-square">{{metadata.github}}</i>
+              <a class="fa fa-github-square" href="http://github/{{metadata.github}}"></a>
             {{/if}}
             {{#if metadata.linkedin}}
-              <i class="fa fa-linkedin-square">{{metadata.linkedin}}</i>
+              <a class="fa fa-linkedin-square" href="{{metadata.linkedin}}"></a>
             {{/if}}
           </div>
           <div class="row">
