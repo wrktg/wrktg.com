@@ -4,28 +4,32 @@
     <h2>Our Team</h2>
   </div>
   <div class="row">
-    {{#each contents.team._.pages}}
-      <div class="col-md-6">
-        <div class="well">
-          <div class="row profile">
-            <img src="{{resolve-url url metadata.image}}" alt="{{metadata.name}}"/>
-            <h3>{{metadata.name}}</h3>
-            {{#if metadata.twitter}}
-              <a class="fa fa-twitter-square" href="https://twitter.com/{{metadata.twitter}}"></a>
-            {{/if}}
-            {{#if metadata.github}}
-              <a class="fa fa-github-square" href="http://github/{{metadata.github}}"></a>
-            {{/if}}
-            {{#if metadata.linkedin}}
-              <a class="fa fa-linkedin-square" href="{{metadata.linkedin}}"></a>
-            {{/if}}
-          </div>
-          <div class="row">
-            {{{html}}}
+    {{#sort contents.team key="order"}}
+    
+      {{#each this}}
+        <div class="col-md-6">
+          <div class="well">
+            <div class="row profile">
+              <img src="{{resolve-url url metadata.image}}" alt="{{metadata.name}}"/>
+              <h3>{{metadata.name}}</h3>
+              {{#if metadata.twitter}}
+                <a class="fa fa-twitter-square" href="https://twitter.com/{{metadata.twitter}}"></a>
+              {{/if}}
+              {{#if metadata.github}}
+                <a class="fa fa-github-square" href="http://github/{{metadata.github}}"></a>
+              {{/if}}
+              {{#if metadata.linkedin}}
+                <a class="fa fa-linkedin-square" href="{{metadata.linkedin}}"></a>
+              {{/if}}
+            </div>
+            <div class="row">
+              {{{html}}}
+            </div>
           </div>
         </div>
-      </div>
-    {{/each}}
+      {{/each}}
+      
+    {{/sort}}
     <div class="col-md-6">
           <div class="row">
             <img src="">

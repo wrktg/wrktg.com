@@ -1,8 +1,9 @@
 {{>head}}
 <div class="container posts">
   <div class="row">
-    {{#each contents.blog._.directories}}
-      {{#with this.[index.md]}}
+    {{#sort contents.blog key="date" type="date" order="descending"}}
+
+      {{#each this}}
         {{!-- <span class="icon-{{icon}}"></span> --}}
         <article class="article">
           <header>
@@ -14,8 +15,9 @@
             <hr/>
           </section>
         </article>
-      {{/with}}
-    {{/each}}
+      {{/each}}
+
+    {{/sort}}
   </div>
 </div>
 
